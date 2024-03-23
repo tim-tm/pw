@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -Wextra -pedantic -std=c11 -g -ggdb2
+CFLAGS=-Wall -Wextra -pedantic -g -ggdb2
 DEFINES=
 INCLUDES=
 LIBS=
