@@ -1,3 +1,5 @@
+[![test build](https://github.com/tim-tm/pw/actions/workflows/test_build.yml/badge.svg)](https://github.com/tim-tm/pw/actions/workflows/test_build.yml)
+
 # pw
 
 pw is a really simple password manager.
