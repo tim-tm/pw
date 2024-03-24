@@ -37,7 +37,7 @@ make
 | ------ | ----------- |
 | -g \<password length\> | Generate a password containing numbers, letters and special characters. |
 | -c \<password\> | Check a password's stength. |
-| -rs \<password\> \<old password\> | Set the root password. The old password doesn't need to be specified if no password is set. Consider choosing a strong password since the root password provides access to all other stored passwords. |
+| -rs \<password\> \<old password\> | Set the root password. The old password doesn't need to be specified if no password is set. Consider choosing a strong password since the root password provides access to all other stored passwords. This action will destroy your cache file and therefore all your stored passwords. |
 
 ## Contribution
 

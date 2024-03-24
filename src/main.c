@@ -14,7 +14,7 @@
 
 struct command {
     char name[16];
-    char description[256];
+    char description[512];
     char options[32];
 };
 
@@ -31,7 +31,7 @@ const long charset_len = sizeof(charset_password)/sizeof(char);
 const struct command commands[] = {
     { .name = "-g", .description = "Generate a password containing numbers, letters and special characters.", .options = "<password length>" },
     { .name = "-c", .description = "Check a password's stength.", .options = "<password>" },
-    { .name = "-rs", .description = "Set the root password. The old password doesn't need to be specified if no password is set. Consider choosing a strong password since the root password provides access to all other stored passwords.", .options = "<password> <old password>" },
+    { .name = "-rs", .description = "Set the root password. The old password doesn't need to be specified if no password is set. Consider choosing a strong password since the root password provides access to all other stored passwords. This action will destroy your cache file and therefore all your stored passwords.", .options = "<password> <old password>" },
 };
 const int commands_len = sizeof(commands)/sizeof(struct command);
 
