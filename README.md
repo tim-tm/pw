@@ -4,6 +4,29 @@
 
 pw is a really simple password manager.
 
+## Setup
+
+### Dependencies
+- openssl
+- glibc
+
+### Building pw
+
+Getting the source
+```sh
+git clone https://github.com/tim-tm/pw.git && cd pw
+```
+
+Setting up the build directory
+```sh
+make setup
+```
+
+Building pw
+```sh
+make
+```
+
 ## Usage
 
 ```sh
@@ -14,6 +37,7 @@ pw is a really simple password manager.
 | ------ | ----------- |
 | -g \<password length\> | Generate a password containing numbers, letters and special characters. |
 | -c \<password\> | Check a password's stength. |
+| -rs \<password\> \<old password\> | Set the root password. The old password doesn't need to be specified if no password is set. Consider choosing a strong password since the root password provides access to all other stored passwords. |
 
 ## Contribution
 

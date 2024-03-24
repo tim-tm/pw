@@ -2,7 +2,7 @@ CC=gcc
 CFLAGS=-Wall -Wextra -pedantic -g -ggdb2
 DEFINES=
 INCLUDES=
-LIBS=
+LIBS=-lcrypto
 MAKEFLAGS=-j$(shell nproc)
 
 SRCDIR=src
